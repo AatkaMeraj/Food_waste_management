@@ -116,7 +116,7 @@ if "engine" not in st.session_state:
                     )
                     st.session_state["db_info"] = {"database": database, "table": table}
                     st.success("Connected successfully! Reloading...")
-                    st.experimental_rerun()
+                    st.rerun()
                 except Exception as e:
                     st.error(f"Connection failed: {e}")
 
@@ -396,5 +396,6 @@ elif page == "SQL Query Studio":
                     st.success("Query executed.")
         except Exception as e:
             st.error(f"Query error: {e}")
+
 
 
