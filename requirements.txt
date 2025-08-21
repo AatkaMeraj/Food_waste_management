@@ -3,4 +3,4 @@ sqlalchemy
 pymysql
 pandas
 plotly
-requirements.txt
+
